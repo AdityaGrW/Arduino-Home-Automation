@@ -1,0 +1,168 @@
+Introduction 
+1.1 Motivation and Background 
+ Home automation is the automation process of home appliances and other home functions so that they can be controlled with your phone, computer, or even remotely. 
+Below is a list of some home automation projects which are based on various microcontrollers, arduino, raspberry pi, etc. These home automation projects are covered with detailed explanation of circuit diagrams, source codes and videos. 
+1.2 Objective
+The main intention of this project is to design a home automation system using an Arduino board with Bluetooth technology and to control it remotely by any Android operating system based smartphone.
+
+
+1.3 Outline 
+This dissertation report consists of the following chapters. The contents of the chapters are as follows, 
+Chapter 2: Literature review of the project 
+Chapter 3: Component-wise specification, Implemented circuit and Working 
+Chapter 4: Analysis based on the output 
+Chapter 5: Conclusion
+
+
+ 
+
+
+
+
+Chapter 2 
+Literature Survey 
+
+Nowadays, we have remote controls for our television sets and other electronic systems, which have made our lives real easy. Have you ever wondered about home automation which would give the facility of controlling tube lights, fans and other electrical appliances at home using a remote control? Off-course, Yes! But, are the available options cost-effective? If the answer is No, we have found a solution to it. We have come up with a new system called Arduino based home automation using Bluetooth. This system is super-cost effective and can give the user the ability to control any electronic device without even spending for a remote control. This project helps the user to control all the electronic devices using his/her smartphone. Time is a very valuable thing. Everybody wants to save time as much as they can. New technologies are being introduced to save our time. To save people’s time we are introducing a Home Automation system using Bluetooth. With the help of this system you can control your home appliances from your mobile phone. You can turn on/off your home appliances within the range of Bluetooth.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chapter 3 
+Circuit Design & Working 
+3.1 Components Used
+1)ARDUINO UNO 
+2)2 CHANNEL RELAY(5v)
+3)BLUETOOTH MODULE HC05
+4)STEP DOWN TRANSFORMER 
+5)LOAD(BULB 220V)
+6)CONNECTING WIRES
+7)SIMULATION SOFTWARE (PROTEUS)
+8)SMARTPHONE(ANDROID APPLICATION)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.2 Component Specification 
+
+3.2.1 ARDUINO UNO 
+
+ Fig 3.2.1
+Arduino is an open source computer hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices and interactive objects that can sense and control objects in the physical and digital world. The project's products are distributed as open-source hardware and software, which are licensed under the GNU Lesser General Public License (LGPL) or the GNU General Public License (GPL), permitting the manufacture of Arduino boards and software distribution by anyone. Arduino boards are available commercially in preassembled form, or as do-it-yourself (DIY) kits. Arduino board designs use a variety of microprocessors and controllers. The boards are equipped with sets of digital and analog input/output (I/O) pins that may be interfaced to various expansion boards or Breadboards (shields) and other circuits. The boards feature serial communications interfaces, including Universal Serial Bus (USB) on some models, which are also used for loading programs from personal computers. The microcontrollers are typically programmed using a dialect of features from the programming languages C and C++. In addition to using traditional compiler toolchains, the Arduino project provides an integrated development environment (IDE) based on the Processing language project. 
+
+
+Features of the Arduino UNO:
+ Microcontroller: ATmega328 
+Operating Voltage: 5V 
+Input Voltage (recommended): 7-12V 
+Input Voltage (limits): 6-20V 
+Digital I/O Pins: 14 (of which 6 provide PWM output) 
+Analog Input Pins: 6
+DC Current per I/O Pin: 40 mA 
+DC Current for 3.3V Pin: 50 mA 
+Flash Memory: 32 KB of which 0.5 KB used by bootloader 
+SRAM: 2 KB (ATmega328) 
+EEPROM: 1 KB (ATmega328) Clock Speed: 16 MHz
+
+ARDUINO HARDWARE PART:- 
+
+Arduino is open-source hardware. The hardware reference designs are distributed under  a Creative Commons Attribution Share-Alike 2.5 license and are available on the Arduino  website. Layout and production files for some versions of the hardware are also available. 
+Although the hardware and software designs are freely available under copyleft licenses, the  developers have requested the name Arduinoto be exclusive to the official product and not be  used for derived works without permission. The official policy document on use of the Arduino  name emphasizes that the project is open to incorporating work by others into the official  product. Several Arduino-compatible products commercially released have avoided the project  name by using various names ending in -duino. 
+Most Arduino boards consist of an Atmel 8-bit  
+AVR microcontroller (ATmega8, ATmega168, ATmega328, ATmega1280, ATmega2560) with  varying amounts of flash memory, pins, and features. The 32-bit Arduino Due, based on the  Atmel SAM3X8E was introduced in 2012. The boards use single or double-row pins or female  headers that facilitate connections for programming and incorporation into other circuits. These  may connect with add-on modules termed shields. Multiple and possibly stacked shields may be  individually addressable via an I²C serial bus. Most boards include a 5 V linear regulator and a  16 MHz crystal oscillator or ceramic resonator. Some designs, such as the LilyPad, run at 8 MHz  and dispense with the onboard voltage regulator due to specific form-factor restrictions.
+
+
+3.2.2 RELAY: 
+Fig 3.2.2
+A relay is an electrically operated switch. Many relays use an electromagnet to mechanically  operate a switch, but other operating principles are also used, such as solid-state relays. Relays  are used where it is necessary to control a circuit by a separate low-power signal, or where  several circuits must be controlled by one signal. The first relays were used in long  distance telegraph circuits as amplifiers: they repeated the signal coming in from one circuit and  re-transmitted it on another circuit. Relays were used extensively in telephone exchanges and  early computers to perform logical operations. 
+A type of relay that can handle the high power required to directly control an electric motor or  other loads is called a contactor. Solid-state relay control power circuits with no moving parts,  instead using a semiconductor device to perform switching. Relays with calibrated operating  characteristics and sometimes multiple operating coils are used to protect electrical circuits from  overload or faults; in modern electric power systems these functions are performed by digital  instruments still called "protective relays”.
+Relay features: 
+Number of Relays: 2 
+Control signal: TTL level 
+Rated load: 7A/240VAC 10A/125VAC 10A/28VDC 
+Contact action time: 10ms/5ms
+
+3.2.3 Bluetooth Module
+Fig 3.2.3 
+HC‐05 module is an easy to use Bluetooth SPP (Serial Port Protocol) module,designed for  transparent wireless serial connection setup.The HC-05 Bluetooth Module can be used in a  Master or Slave configuration, making it a great solution for wireless communication.This serial  port bluetooth module is fully qualified Bluetooth V2.0+EDR (Enhanced Data Rate)3Mbps  Modulation with complete 2.4GHz radio transceiver and baseband. It uses CSR Bluecore 04‐ External single chip Bluetooth system with CMOS technology and with AFH (Adaptive  Frequency Hopping Feature). 
+Bluetooth Module HC-05 
+The Bluetooth module HC-05 is a MASTER/SLAVE module.By default the factory setting is  SLAVE.The Role of the module (Master or Slave) can be configured only by AT  COMMANDS.The slave modules cannot initiate a connection to another Bluetooth device, but  can accept connections.Master module can initiate a connection to other devices.The user can  use it simply for a serial port replacement to establish connection between MCU and GPS, PC to  your embedded project, etc. 
+Bluetooth Module Specifications :
+Bluetooth protocol: Bluetooth Specification v2.0+EDR
+Frequency: 2.4GHz ISM band 
+Modulation: GFSK(Gaussian Frequency Shift Keying) 
+Emission power: ≤4dBm, Class 2 
+Sensitivity: ≤-84dBm at 0.1% BER 
+Speed: Asynchronous: 2.1Mbps(Max) / 160 kbps,
+Synchronous: 1Mbps/1Mbps 
+Security: Authentication and encryption 
+Profiles: Bluetooth serial port 
+Power supply: +3.3VDC 50mA 
+Working temperature: -20 ~ +75Centigrade 
+Dimension: 26.9mm x 13mm x 2.2 mm
+
+3.3 Circuit Design 
+ On Simulation Software
+Fig 3.3
+3.4 Block Diagram
+BLOCK DIAGRAM (3.4.a)
+BLOCK DIAGRAM (3.4.b)
+3.5 Working 
+
+Home automation describes a system of networked, controllable devices that work together to make your home more comfortable, customized, efficient and secure. In this device there are five main parts: Arduino,  Bluetooth module,  Relay drivers, android application and step down transformer. Firstly we provide power to the step down transformer, it steps down the input voltage and is given to the arduino with a VIN pin. The  Bluetooth module is  also connected with an arduino to Rx and Tx pin that provides the information to the microcontroller. Microcontroller reads the information and sends it to the relay drivers which  work  as  switches.  In Arduino  we upload  the program  as  per  requirement then it performs some mathematical and logical   operation  to  control   the  relay drivers.
+Further We have explained the steps of the construction and working in simple steps.
+Step 1: Connection
+Install the Proteus software and install all the packages required for any normal Arduino project. 
+Connect the apparatus to the arduino as shown and explained above in the circuit diagram (fig 3.3).
+Step 2:Installation of arduino software.
+If you are new to the Arduino, it is a small board, fully assembled with a AVR microcontroller. It is well suited for hacking and interacting with your environment. Many things that are hard with microcontrollers are rather easy with Arduino. Some of the advantages:
+No need for a separate programming device (programmer).
+Comes with an integrated development environment (IDE) that runs on any platform, Windows, Mac, Linux. Easy connection to your PC with USB hardware is an open source (but the name Arduino is not) has a great community More information can be found at the official Arduino website. 
+Steps
+Connect your Arduino to Computer
+Copy-paste the Home_auto.ino file or open with the Arduino IDE
+Upload the code to Arduino
+Step 3: Install the App
+Connect Arduino to 9v battery or computer
+Install the App in your Phone
+Run the application
+Allow the BT permissions,
+Type Your BT Module name (Normally HC-05)
+Password = 1234
+Pair ok
+Step 4: Control Your home Using Your Phone
+In this project, I only used One Relay and therefore we can control only one device, also we can add more relay modules and control all of your home.
+
+Chapter 4 
+Result & Analysis 
+The system as the name indicates, ‘Home automation’ makes the system more flexible and provides an attractive user interface compared to other home automation systems. In this system we integrate mobile devices into home automation systems. A novel architecture for a home automation system is proposed using relatively new communication technologies. The system consists of mainly three components: a BLUETOOTH module, Arduino microcontroller and relay circuits. WIFI is used as the communication channel between android phone and the Arduino microcontroller. We hide the complexity of the notions involved in the home automation system by including them into a simple, but comprehensive set of related concepts. This simplification is needed to fit as much of the functionality on the limited space offered by a mobile device’s display. This paper proposes a low cost, secure, ubiquitously accessible, auto-configurable, remotely controlled solution. The approach discussed in the paper is novel and has achieved the target to control home appliances remotely using the WiFi technology to connect system parts, satisfying user needs and requirements. WiFi technology capable solution has proved to be controlled remotely, provide home security and is cost effective as compared to the previously existing systems. Hence we can conclude that the required goals and objectives of the home automation system have been achieved. The system design and architecture were discussed, and the prototype presents the basic level of home appliance control and remote monitoring has been implemented. Finally, the proposed system is better from the scalability and flexibility point of view than the commercially available home automation systems.
+
+Chapter 5 
+5.1 Conclusion
+It   can  be   concluded  from   the  above discussion   that  Home   automation   is  a special  kind of  device which controls home appliances without extra effort.
+This project's motive is to control home appliances in smart homes with your smartphone which must also be user friendly, designed at low cost, simple installation.
+A novel architecture for a home automation system is proposed using relatively new communication technologies. The system consists of mainly three components is a BLUETOOTH module, Arduino microcontroller and relay circuits 
+
